@@ -1,0 +1,440 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding:  0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: black;
+    color: white;
+}
+
+#inicio{
+    height: 100vh;
+    width: 100%;
+    background-image: url('/img/joaozinho.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    height: fit-content;
+    width: 80%;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+#logo{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#header{
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+#menu{
+    display: flex;
+    list-style: none;
+}
+
+#menu li{
+    border: none;
+}
+
+#menu li:hover{
+    border-bottom: 2px solid white;
+}
+
+#menu a{
+    display: block;
+    padding: 0.8rem;
+}
+
+.hamburguer{
+    width: 35px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+    display: block;
+}
+
+#menuhamburguer{
+    display: none;
+}
+
+.apresentacao{
+    width: 100%;
+    height: calc(100vh - 62px);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.apresentacao h2{
+    font-size: 3em;
+}
+
+.apresentacao a{
+    font-size: 1.2em;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px 30px;
+    border: 2px solid white;
+    border-radius: 20px;
+    font-weight: bolder;
+}
+
+.apresentacao a:hover{
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black;
+    border-color: white;
+}
+
+#sobre{
+    height: fit-content;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+
+.titulosecao{
+    text-align: center;
+    padding-top: 60px;
+    font-size: 1.5em;
+}
+
+#sobrearea{
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    gap: 64px;
+}
+
+#imgsobre{
+    width: 400px;
+}
+
+.texto-informacoes{
+    font-size: 1.2em;
+    text-align: justify;
+}
+
+.linha{
+    padding-top: 15px;
+    display: flex;
+    gap: 16px;
+}
+
+.coluna{
+    display: flex;
+    align-items: center;
+}
+
+.icon{
+    width: 3em;
+}
+
+.negrito{
+    font-weight: bold;
+}
+
+#resumo{
+    height: fit-content;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+
+.linha-resumo{
+    padding-top: 40px;
+    display: flex;
+    gap: 16px;
+}
+
+.col-resumo{
+    background-color: #111010;
+    width: 100%;
+    padding: 50px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    font-size: 1.3em;
+}
+
+.col-resumo h3{
+    text-align: center;
+}
+
+.item-resumo{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin: 15px 0;
+    text-align: justify;
+}
+
+.item-resumo h5{
+    font-weight: normal;
+}
+
+#projetos{
+    height: fit-content;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+
+.linha-projetos{
+    margin-top: 40px;
+    padding: 40px 0px;
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    background-color: #111010;
+    border-radius: 15px;
+}
+
+.linha-projetos img{
+    width: 30%;
+}
+
+#contato{
+    height: fit-content;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+
+.form-contato{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px 0;
+}
+
+.linha-contato{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    padding: 8px 0;
+    gap: 16px;
+}
+
+.input-contato{
+    width: calc(100% - 8px);
+    height: 2em;
+    border: 1px solid #959090;
+    background-color: #111010;
+    color: #959090;
+    padding-left: 8px;
+    font-size: 1em;
+}
+
+#textarea-contato{
+    resize: none;
+    width: calc(100% - 8px);
+    height: 250px;
+    border: 1px solid #959090;
+    background-color: #111010;
+    padding-left: 8px;
+    padding-top: 8px;
+    color: #959090;
+    font-size: 1em;
+}
+
+#botao-contato{
+    width: 100px;
+    height: 40px;
+    border: 1px solid white;
+    background-color: #111010;
+    color: white;
+    cursor: pointer;
+}
+
+#footer{
+    width: 100%;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.item-footer{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #111010;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 4px;
+    border: solid 1px white;
+}
+
+.item-footer img{
+    width: 50px;
+}
+
+#rodape{
+    width: 100%;
+    height: 64px;
+    background-color: #111010;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#rodape h3{
+    font-size: 16px;
+}
+
+@media (max-width: 768px) {
+    #inicio{
+        background-position: -230px 0;
+    }
+
+    #menu a{
+        padding: 0.5rem;
+    }
+
+    .container{
+        width: 90%;
+    }
+
+    .apresentacao h2{
+        font-size: 2.2em;
+    }
+
+    #sobrearea{
+        gap: 2em;
+    }
+
+    #imgsobre{
+        width: 320px;
+    }
+
+    .texto-informacoes{
+        font-size: 1em;
+    }
+
+    .col-resumo{
+        padding: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    #logo{
+        font-size: 1.5rem;
+    }
+    #inicio{
+        background-position: -265px 0;
+    }
+    #menu{
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 50px;
+        right: 0px;
+        z-index: 20;
+        height: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        visibility: hidden;
+        transition: 0.5s;
+        overflow-y: hidden;
+    }
+
+    #menu li:hover{
+        border: none;
+    }
+
+    #menu li{
+        padding-top: 15px;
+    }
+
+    #navegacao.triggerMenu #menu{
+        height: 250px;
+        visibility: visible;
+    }
+
+    #menu li{
+        text-align: center;
+    }
+    #menuhamburguer{
+        display: block;
+    }
+
+    .apresentacao h2{
+        font-size: 1.5em;
+    }
+
+    .apresentacao a{
+        font-size: 0.7em;
+        padding: 8px 25px;
+    }
+
+    #sobrearea{
+        flex-direction: column;
+    }
+
+    .linha-resumo{
+        flex-direction: column;
+        gap: 1em;
+        align-items: center;
+    }
+
+    .col-resumo{
+        width: 85%;
+    }
+
+    .linha-projetos{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .linha-projetos img{
+        width: 80%;
+    }
+
+    .linha-contato{
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+    }
+
+    #botao-contato{
+        width: 100%;
+    }
+
+    .item-footer{
+        width: 80px;
+        height: 80px;
+    }
+    
+    .item-footer img{
+        width: 40px;
+    }
+}
+
+
+
+
+
