@@ -174,7 +174,7 @@ a{
     flex-direction: column;
     gap: 16px;
     font-size: 1.3em;
-    height: fit-content;
+    height: 700px;
 }
 
 .col-resumo h3{
